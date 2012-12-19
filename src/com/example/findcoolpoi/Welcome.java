@@ -20,6 +20,7 @@ public class Welcome extends Activity{
 		ourSong = MediaPlayer.create(Welcome.this, R.raw.intro);
 		ourSong.start();
 		new loadSomeStuff().execute();
+		
 		Thread timer = new Thread() {
 			public void run() {
 				try{
@@ -58,7 +59,7 @@ public class Welcome extends Activity{
 			for(int i = 0; i < 20; i++){
 				publishProgress(5);
 				try {
-					Thread.sleep(150);
+					Thread.sleep(200);
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
